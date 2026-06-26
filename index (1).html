@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Merch Visits – Mobile Logger</title>
+
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./styles.css" />
+  <meta name="theme-color" content="#eef1f5" />
+</head>
+
+<body>
+  <!-- NEW: modern header (sticky, glass, modern controls) -->
+  <header class="appHeader">
+    <div class="brand">
+      <div class="brandLogo" aria-hidden="true"></div>
+
+      <div class="brandText">
+        <div class="sbTitle">Mobile Logger</div>
+        <div class="sbSub">
+          <span class="muted">Merch Visits •</span>
+          <span id="swVer">SW: —</span>
+          <span class="muted">• PWA • offline-ready</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="topControls">
+      <span class="datePill" id="datePill">—</span>
+
+     <label class="iconBtn" id="btnCalendar" title="Vybrat den" aria-label="Vybrat den">
+  <span class="icon" aria-hidden="true">🗓️</span>
+  <input id="dayPicker" type="date" aria-label="Vybrat den" />
+</label>
+
+    </div>
+  </header>
+
+  <!-- App root -->
+  <main id="app" class="app"></main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
